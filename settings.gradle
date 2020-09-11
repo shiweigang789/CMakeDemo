@@ -1,2 +1,4 @@
-include ':app'
+include ':libsojsoncpp'
+include ':libasimple'
+include ':app', ':libajsoncpp', ':libsosimple'
 rootProject.name='CMakeDemo'

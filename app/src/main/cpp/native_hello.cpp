@@ -9,5 +9,5 @@ jstring JNICALL
 LIBPATH(NativeLib_stringFromNativeLib)(JNIEnv *env, jclass thiz){
     std::string hello = "Hello,I from C++";
 //    return env->NewStringUTF(hello.c_str());
-    return env->NewStringUTF("Hello,I from C++123");
+    return env->NewStringUTF("Hello,I from C++123123453255");
 }

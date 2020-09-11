@@ -9,7 +9,7 @@ package com.hiwallet.cmakedemo.jni;
 public class NativeLib {
 
     static {
-        System.loadLibrary("native_hello");
+        System.loadLibrary("native_test");
     }
 
     public static native String stringFromNativeLib();

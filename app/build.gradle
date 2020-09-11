@@ -31,6 +31,13 @@ android {
         }
     }
 
+    //    当使用so动态库时 必须设置so库路径让gradle将需要的库打到apk中，若不需要动态库，则将以下命令注释 sourceSets{ }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['../export/libsohello/lib', '../export/libsojsoncpp/lib']
+        }
+    }
+
     externalNativeBuild {
         cmake {
             path 'src/main/cpp/CMakeLists.txt'
